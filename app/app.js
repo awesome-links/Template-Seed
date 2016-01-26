@@ -2,10 +2,13 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-let {Component}  = React;
 import  Header from './components/header';
 import  Search from './components/search';
 import ContributeButton from './components/contribute';
+import LinksList from './components/lists';
+import 'normalize.css';
+
+let {Component}  = React;
 
 class App extends Component {
   render() {
@@ -13,6 +16,9 @@ class App extends Component {
       <div>
         <Header title="Awesome ES6"/>
         <Search/>
+        <div style={{padding: '20px'}}>
+          <LinksList />
+        </div>
         <ContributeButton/>
       </div>
     );

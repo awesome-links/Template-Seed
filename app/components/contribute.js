@@ -9,7 +9,7 @@ export default class ContributeButton extends Component {
   render(){
     return (
       <div className={styles.contributeButton}>
-        <Button icon='add' floating accent mini/>
+        <Button icon='add' floating accent/>
       </div>
     );
   }
