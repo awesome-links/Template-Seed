@@ -1,0 +1,22 @@
+body {
+  font-family: 'Roboto';
+}
+
+.headerText {
+  width: 100%;
+  text-align: center;
+}
+
+.searchBar {
+  background-color: #fff;
+  padding-top: 20px;
+  .searchText {
+    width: 100%;
+  }
+}
+
+.contributeButton {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
