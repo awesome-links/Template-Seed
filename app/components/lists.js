@@ -8,7 +8,9 @@ let {Component} = React;
 const ListGroup = (props) => {
   return (
     <div>
-      <h2 className={styles.subHeader}>{props.caption.toUpperCase()}</h2>
+      {props.items.length > 0 &&
+        <h2 className={styles.subHeader}>{props.caption.toUpperCase()}</h2>
+      }
       {
         props.items.map((item, index) => (
             <ListItem
