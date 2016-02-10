@@ -1,0 +1,25 @@
+{
+  "HTTP": [
+    {
+      "heading": "Got",
+      "link": "https://github.com/sindresorhus/got",
+      "description":"A nicer interface to the built-in http module."
+    },{
+      "heading": "Nock",
+      "link": "https://github.com/pgte/nock",
+      "description":" A HTTP mocking and expectations library."
+    }
+  ],
+  "Books": [
+    {
+      "heading": "Node.js in Action",
+      "link": "http://www.amazon.com/Node-js-Action-Mike-Cantelon/dp/1617290572",
+      "description":"Amazing book"
+    },{
+      "heading": "Mastering Node",
+      "link": "http://visionmedia.github.io/masteringnode/",
+      "description":"A book from TJ"
+    }
+  ]
+}
+

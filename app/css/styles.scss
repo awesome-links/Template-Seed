@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%
 }
+
 body {
   font-family: 'Roboto';
 }
@@ -22,4 +23,29 @@ body {
   position: fixed;
   right: 30px;
   bottom: 30px;
+}
+
+.absCenter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.subHeader {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF4081;
+  letter-spacing: 2px;
+  border-bottom: 1px dashed #ccc;
+  padding: 10px;
+  text-align: center;
 }
