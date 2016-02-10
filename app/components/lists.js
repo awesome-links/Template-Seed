@@ -1,36 +1,44 @@
-'use strict'; 
+'use strict';
 
 import React from 'react';
-import { List, ListItem, ListSubHeader, ListDivider } from 'react-toolbox';
-
-
+import { List, ListItem, ListDivider } from 'react-toolbox';
+import styles from '../css/styles.scss';
 let {Component} = React;
 
-const Lists = () => (
-  <List selectable ripple>
-    <ListSubHeader caption='Explore characters' />
-    <ListItem
-      caption='Dr. Manhattan'
-      legend="Jonathan 'Jon' Osterman"
-      leftIcon='link'
-    />
-    <ListItem
-      caption='Ozymandias'
-      legend='Adrian Veidt'
-      leftIcon='link'
-    />
-    <ListItem
-      caption='Rorschach'
-      legend='Walter Joseph Kovacs'
-      leftIcon='link'
-    />
-  </List>
-);
+const ListGroup = (props) => {
+  return (
+    <div>
+      <h2 className={styles.subHeader}>{props.caption.toUpperCase()}</h2>
+      {
+        props.items.map((item, index) => (
+            <ListItem
+              key={index}
+              caption={item.heading.toUpperCase()}
+              legend={item.description}
+              leftIcon='link'
+            />
+        ))
+      }
+    </div>
+  );
+};
+
+const Lists = (props) => {
+  return (
+    <List>
+      {
+        Object.keys(props.data).map((groupName, index) => (
+          <ListGroup caption={groupName} items={props.data[groupName]} key={index}/>
+        ))
+      }
+    </List>
+  );
+};
 
 export default class LinksList extends Component {
-  render(){
+  render() {
     return (
-      <Lists />
+      <Lists {...this.props} />
     );
   }
 }
