@@ -4,6 +4,15 @@ html {
 
 body {
   font-family: 'Roboto';
+  background: #F1F1F1;
+}
+
+.wrapper {
+    box-shadow: 0 0 5px #ccc;
+    background: #fff;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 70px;
 }
 
 .headerText {
@@ -45,7 +54,6 @@ body {
   font-weight: bold;
   color: #FF4081;
   letter-spacing: 2px;
-  border-bottom: 1px dashed #ccc;
   padding: 10px;
   text-align: center;
 }

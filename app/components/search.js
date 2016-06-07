@@ -13,7 +13,7 @@ export default class Search extends Component {
       <AppBar flat className={styles.searchBar}>
           <Input
             type='text'
-            label='Search Awesome Links'
+            label='Search Topics'
             name='search'
             icon='search'
             className={styles.searchText}
